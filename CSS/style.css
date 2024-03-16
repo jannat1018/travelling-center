@@ -1,0 +1,644 @@
+/* goole fontlinkup */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap');
+/*Common Style*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif;
+overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+}
+
+/* Reusable Classes */
+.container {
+    width: 1024px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 0 15px;
+}
+
+.btn {
+    border: none;
+    outline: none;
+    padding: 15px 30px;
+    color: #fff;
+    background-color:#4caf50;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+
+.btn:hover {
+    background-color: #45a049;
+}
+
+.title {
+    text-align: center;
+    font-size: 50px;
+    color: #6e00fd;
+    margin-bottom: 30px;
+}
+
+.sub-title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Navigation */
+
+.nav-menu {
+    padding: 20px 0;
+}
+
+.hamburger {
+    display: none;
+}
+
+.d-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h3 {
+    font-size: 40px;
+    font-weight: 400;
+    opacity: 0.5;
+}
+
+.menu ul {
+    display: flex;
+}
+
+.menu ul li a {
+    color: #1a1a1a;
+    font-weight: 600;
+    margin-right: 30px;
+    text-transform: capitalize;
+}
+
+.menu ul li a:hover {
+    color: #fc165b;
+}
+
+/* header section */
+
+header {
+    height: 800px;
+    background: url('../img/adventure\(1\).jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+
+}
+
+header .container {
+    height: 100%;
+    position: relative;
+}
+
+header .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.right img {
+    width: 500px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.left h3 {
+    color: #fff;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+
+}
+
+.left h1 {
+    font-size: 65px;
+    color: #fff;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.left span {
+    color: #fff;
+    font-style: italic;
+    display: block;
+}
+
+.left span::after {
+    content: " Freepik";
+    text-decoration: underline;
+    
+}
+
+
+.left button {
+    border: 2px solid #fff;
+    outline: none;
+    padding: 15px 25px;
+    background: transparent;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #fff;
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 700;
+
+}
+
+.left button:hover{
+    background: #fff;
+    color: #ff2263;
+}
+
+
+/* programs section */
+
+.programs{
+padding: 60px 0;
+}
+
+.card-container {
+    margin-top: 80px;
+    display: grid;
+    
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+
+.card-container .card img{
+    height: 200px;
+    width: 250px;
+    margin-top: 25px;
+    object-fit: cover;
+}
+
+.card-container .card .btn {
+    align-self: start;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+/* Social Section */
+
+.social {
+    background-color: rgb(4, 124, 172);
+    color: #fff;
+    padding: 50px 0;
+}
+
+.social .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.social .wrapper .content,
+.social .wrapper .icons {
+    width: 48%;
+}
+
+.social .content h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+
+}
+
+.social .content span {
+    font-size: 22px;
+    font-style: italic;
+    font-weight: 300;
+}
+
+.social .icons p {
+    color: #ffa731;
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.social .icons {
+    text-align: center;
+}
+
+.social .icons a {
+    font-size: 30px;
+    color: #ffa731;
+    margin-right: 15px;
+}
+
+/* Choosing Section */
+
+.choose {
+    background-color: palevioletred;
+    padding: 50px 0;
+    color: #fff;
+}
+.choose .choose-title {
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.choose .choose-subtitle {
+    text-align: center;
+    font-size: 18px;
+}
+
+.counter-box {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+}
+
+.counter-box .counter h2 {
+    font-size: 50px;
+    color: #6d4004;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.counter-box .counter p {
+    text-align: center;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+/* Contact Section */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.contact{
+    min-height: 100vh;
+    background-color: #e8f0fe;
+    padding: 50px;
+    text-align: center;
+
+}
+.container{
+    max-width: 800px;
+    margin: 0 auto;
+
+}
+.container h2{
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #333;
+}
+.contact-wrapper{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+}
+.contact-form{
+    text-align: left;
+}
+.contact-form h3{
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+.form-group{
+    margin-bottom: 20px;
+}
+input, textarea{
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+   border: none;
+   background-color: #f8f9fa;
+   color: #333;
+}
+input:focus,
+textarea:focus{
+    outline: none;
+    box-shadow: 0 0 8px #bbb;
+}
+button{
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #4caf50;
+    color: #fff;
+   border: none;
+   cursor: pointer;
+}
+button:hover{
+    background-color: #45a049;
+}
+.contact-info{
+    text-align: left;
+
+}
+.contact-info h3{
+font-size: 24px;
+margin-bottom: 20px;
+color: #333;
+}
+.contact-info p{
+margin-bottom: 10px;
+color: #555;
+}
+.contact-info i{
+color: #4caf50;
+margin-right: 10px;
+}
+
+    
+
+/* Headline Section */
+
+.headline {
+    background-color: gray;
+    padding: 50px 0;
+    color: #fff;
+    
+}
+
+.headline-box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.headline-box .card {
+    padding: 10px 50px 10px 10px;
+
+}
+
+.headline-box .card h3 {
+    font-size: 20px;
+    letter-spacing: 3px;
+    margin-bottom: 30px;
+}
+
+.headline-box .card p {
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+
+/* footer Section */
+
+footer {
+    padding: 30px 0;
+    text-align: center;
+    background: #333333;
+    color: #fff;
+}
+
+footer p {
+    font-size: 15px;
+    font-weight: 300;
+}
+
+footer p a {
+    color: #fff;
+    text-decoration: underline;
+}
+footer p a:hover {
+    color: rgba(255, 255, 255, 0.3);
+}
+
+
+/* Mobile Menu */
+
+.mobile-menu {
+   position: fixed;
+   top: 0;
+   left: -100%;
+   height: 100%;
+   width: 60%;
+   z-index: 10;
+   background: #ffa731;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   transition: 0.5s ease-in-out;
+}
+.mobile-menu .close {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    font-size: 25px;
+    color: #fff;
+}
+
+.mobile-menu ul li a {
+    font-size: 25px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 600;
+    display: inline-block;
+    margin-bottom: 25px;
+}
+
+.show-menu {
+    left: 0;
+}
+
+
+
+
+
+/* Responsibe Layout */
+@media screen and (max-width: 1024px) {
+    
+    .container{
+        width: 95%;
+        overflow: hidden;
+    }
+
+.help-container .left img {
+    width: 470px;
+
+   } 
+
+}
+
+
+@media screen and (max-width: 992px) {
+    .help-container .left img {
+        width: 450px;
+    }
+}
+
+
+
+@media screen and (max-width: 768px) {
+    header {
+        height: 550px;
+       
+    }
+    header .left h1 {
+       font-size: 34px;
+    }
+    header .left button {
+       font-size: 16px;
+       padding: 10px 20px;
+    }
+    .right img {
+        width: 350px;
+    }
+ .programs .card-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 20px;
+ }
+
+ .help .help-container {
+    flex-direction: column;
+ }
+ .help .help-container .right {
+      order: 1;
+      text-align: center;
+ }
+
+ .social .content h1 {
+    font-size: 30px;
+ }
+
+ .social .content span {
+     width: 18px;
+ }
+
+ .container{
+    padding: 20px;
+}
+.contact-wrapper{
+    grid-template-columns: 1fr;
+}
+
+
+.headline .headline-box {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+}
+
+
+
+@media screen and (max-width: 576px) {
+    .nav-menu .menu {
+        display: none;
+    }
+.hamburger {
+    display: block;
+}
+
+    header .wrapper .right {
+        display: none;
+    }
+   header .wrapper {
+    justify-content: center;
+    margin-top: 20px;
+   }
+
+.programs .title {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.programs .sub-title {
+    font-size: 16px;
+    padding: 0 30px;
+}
+
+.programs .card-container {
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+    grid-row-gap: 40px;
+}
+.title {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.help .help-container .left img {
+    width: 400px;
+}
+.social .wrapper {
+    flex-direction: column;
+}
+.social .wrapper .icons {
+    margin-top: 30px;
+}
+
+.choose .choose-title {
+    font-size: 30px;
+}
+.choose .choose-subtitle {
+    font-size: 15px;
+}
+.choose .counter-box {
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 20px;
+}
+
+.contact .contact-title {
+    font-size: 30px;  
+}
+
+.contact .contact-subtitle {
+font-size: 15px;
+}
+
+.contact .information-container {
+    grid-template-columns: repeat(1, 1fr);
+}
+.contact .background {
+    background-position: 35% 25%;
+}
+.headline .headline-box {
+    grid-template-columns: repeat(1, 1fr);
+    grid-row-gap: 20px;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
